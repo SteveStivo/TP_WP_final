@@ -20,7 +20,7 @@ function loop_canada($nomDeLaProvince, $capitale, $photoDeLaProvince) {
 		?>
 			<span>Le nom de la province est : <?php the_field( $nomDeLaProvince[$i] ); ?></span><br>
 			<span>Le nom de la capitale est : <?php the_field( $capitale[$i] ); ?></span><br>
-				<img src="<?php echo esc_url( get_field( $photoDeLaProvince[$i] )['url'] ); ?>" alt="<?php echo esc_attr( get_field( $photoDeLaProvince[$i] )['alt'] ); ?>" /><br>
+				<img class="img_content_pg" src="<?php echo esc_url( get_field( $photoDeLaProvince[$i] )['url'] ); ?>" alt="<?php echo esc_attr( get_field( $photoDeLaProvince[$i] )['alt'] ); ?>" /><br>
 			<br>
 		<?php 
 	}

@@ -52,15 +52,34 @@ h2 {
   justify-content: center;
 }
 #content_img_accueil .img_accueil {
-  background: url(http://localhost/WP/wp-content/uploads/2022/11/screenshot.png) 50%;
-  height: 250px;
-  width: 35%;
+  background: url(http://localhost/WP/wp-content/uploads/2022/11/screenshot.png) no-repeat 50%;
+  height: 50vh;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  #content_img_accueil .img_accueil {
+    height: 25vh;
+    width: 100%;
+  }
 }
 
 .img_global_canada {
   background: url(http://localhost/WP/wp-content/uploads/2022/11/canada.jpg) no-repeat 50% 50%;
   height: 480px;
   width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .img_global_canada {
+    height: 25vh;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .img_content_pg {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 footer {
