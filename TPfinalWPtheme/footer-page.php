@@ -3,8 +3,6 @@
 ?>
 <footer id="footer-page">
 
-<p>CECI EST LA FOOTER PAGE</p>
-
 </footer>
 <?php
 

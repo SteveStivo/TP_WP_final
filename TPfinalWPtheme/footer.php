@@ -2,7 +2,7 @@
 //Template name: Footer
 ?>
 
-
+<!-- footer du bas -->
 <footer id="footer_canada">
 <?php
 wp_nav_menu(array(

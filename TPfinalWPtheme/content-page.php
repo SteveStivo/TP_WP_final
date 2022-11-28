@@ -2,15 +2,19 @@
 //Template name: Content-Page
 get_header();
 ?>
-    
+<!-- affiche le titre du model Content-page dans une PAGE  -->
 <h2><?php the_field( 'nom_de_la_region' ); ?></h2>
+<!-- affiche une image HERO -->
 <div class="hero">
     <img class="img_global_canada" alt="">
 </div>
 <br>
-<?php  
+
+<?php 
+// récupère le nom de la région à partir du modèle ACF
 $nomDeLaRegion = get_field( 'nom_de_la_region' );
 
+// fonction qui récupère le nom de la province, sa capitale et une photo à partir du modèle ACF et les affectes à des variables
 function loop_canada($nomDeLaProvince, $capitale, $photoDeLaProvince) {
 	for ($i=0; $i < count($nomDeLaProvince); $i++) { 
 		?>
@@ -22,6 +26,7 @@ function loop_canada($nomDeLaProvince, $capitale, $photoDeLaProvince) {
 	}
 }
 
+// affecte les variables en fonction du nom de la région
 switch ($nomDeLaRegion) {
 	case 'La région de l’Atlantique': 
 		$nomDeLaProvince = [
